@@ -40,6 +40,7 @@ cat <<EOT > /etc/wireguard/wg0.conf
 Address = 10.0.0.1/24
 ListenPort = $SERVER_PORT
 PrivateKey = $SERVER_PRIVATE_KEY
+MTU = 1500
 
 [Peer]
 PublicKey = $CLIENT_PUBLIC_KEY
