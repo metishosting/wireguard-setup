@@ -214,10 +214,6 @@ Save new firewall rules
 iptables-save > /etc/iptables/rules.v4
 ```
 ## Client
-Open pterodactyl config
-```
-nano /etc/pterodactyl/config.yml
-```
 Create a script that starts wireguard connection after 60 second
 ```bash
 sudo nano /etc/systemd/system/delayed-wg-startup.service
