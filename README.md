@@ -29,7 +29,7 @@ Our `wireguard_setup.sh` script automates the installation and initial configura
 ### Usage
 #### Download the Setup Script
 ```bash
-wget https://raw.githubusercontent.com/metishosting/wireguard_tunnel_setup/main/wireguard_setup.sh
+wget https://raw.githubusercontent.com/metishosting/wireguard-setup/main/wireguard_setup.sh
 ```
 
 #### Make the Script Executable
@@ -61,7 +61,7 @@ After setting up WireGuard, the next step involves configuring the VPN server. T
 ### Usage
 #### Download the Server Setup Script
 ```bash
-wget https://raw.githubusercontent.com/metishosting/wireguard_tunnel_setup/main/wireguard_server_setup.sh
+wget https://raw.githubusercontent.com/metishosting/wireguard-setup/main/wireguard_server_setup.sh
 ```
 
 #### Retrieve Client Information
@@ -106,7 +106,7 @@ The final phase involves setting up the client-side of the VPN using `wireguard_
 ### Usage
 #### Download the Client Setup Script
 ```bash
-wget https://raw.githubusercontent.com/metishosting/wireguard_tunnel_setup/main/wireguard_client_setup.sh
+wget https://raw.githubusercontent.com/metishosting/wireguard-setup/main/wireguard_client_setup.sh
 ```
 
 #### Retrieve Server Information
