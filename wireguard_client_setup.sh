@@ -35,6 +35,7 @@ PrivateKey = $CLIENT_PRIVATE_KEY
 Address = 10.0.0.2/24
 # Using Cloudflare's DNS server; can be replaced with a preferred DNS provider
 DNS = 1.1.1.1
+MTU = 1500
 
 [Peer]
 # Configuration details of the VPN server
