@@ -81,6 +81,9 @@ iptables -I INPUT 1 -p tcp --dport $SERVER_SSH_PORT -j ACCEPT
 echo "Forwarding specific ports from the server to the client..."
 iptables -t nat -I PREROUTING 1 -d $SERVER_PUBLIC_IP -p tcp --dport $CLIENT_SSH_PORT -j DNAT --to-destination 10.0.0.2
 
+## Set outbound IP to second IP ($SERVER_PUBLIC_IP) when traffic from wg subnet (10.0.0.0/24) goes outbound to internet ($SERVER_NETWORK_INTERFACE)
+iptables -t nat -I POSTROUTING 1 -s 10.0.0.0/24 -o $SERVER_NETWORK_INTERFACE -j SNAT --to-source $SERVER_PUBLIC_IP
+
 # Install iptables-persistent to save iptables rules
 echo "Installing iptables-persistent to save rules..."
 apt-get update
