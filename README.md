@@ -156,7 +156,7 @@ This Bash script automates the setup of a secure WireGuard VPN server with an in
 ### Usage
 **Download the script from the specified URL using `wget`**:
 ```bash
-wget https://github.com/metishosting/wireguard-setup/blob/main/wireguard-server-tunnel-firewall.sh
+wget https://raw.githubusercontent.com/metishosting/wireguard-setup/main/wireguard-server-tunnel-firewall.sh
 ```
 
 **Edit the downloaded script to customize the `client_ssh_port` and `server_ssh_port` values**. You can use the `sudo nano` command to open the script in a text editor:
