@@ -206,9 +206,6 @@ Allow port 80 (certbot)
 ```bash
 sudo iptables -t nat -I PREROUTING 1 -d $SERVER_PUBLIC_IP -p tcp --dport 80 -j DNAT --to-destination 10.0.0.2
 ```
-```bash
-iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o wg0 -j SNAT --to-source $SERVER_PUBLIC_IP
-```
 Save new firewall rules
 ```bash
 iptables-save > /etc/iptables/rules.v4
